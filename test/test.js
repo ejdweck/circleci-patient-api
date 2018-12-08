@@ -11,6 +11,7 @@ chai.use(chaiHttp);
 chai.use(chaiLike);
 chai.use(chaiThings);
 
+// tests
 describe('GET /patients/1 ', () => {
     it('As paginated list, sorted lexically by last_name, ascending, limited to 10 results per page, should return row id 1zsjhd0d as the first result of the second page.', (done) => {
         chai.request(server)
